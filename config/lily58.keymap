@@ -44,7 +44,7 @@
             bindings = <
 &kp ESCAPE  &kp F1  &kp F2  &kp F3     &kp F4      &kp F5                           &kp F6        &kp F7        &kp F8        &kp F9     &kp F10    &kp F11
 &trans      &kp Y   &kp U   &kp I      &kp O       &kp P                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp UNDER  &kp F12
-&trans      &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp EQUAL  &kp PIPE
+&kp ENTER   &kp H   &kp J   &kp K      &kp L       &kp SEMICOLON                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp EQUAL  &kp PIPE
 &trans      &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp STAR   &trans     &trans
                             &trans     &trans      &trans         &trans    &trans  &kp NUMBER_0  &trans        &trans
             >;
