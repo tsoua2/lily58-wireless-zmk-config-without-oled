@@ -19,7 +19,7 @@
         };
 
         pg_up {
-            bindings = <&none>;
+            bindings = <&kp PG_UP>;
             key-positions = <16 15>;
             timeout-ms = <100>;
         };
