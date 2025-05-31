@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        pg_down {
+            bindings = <&kp PG_DN>;
+            key-positions = <28 27>;
+            timeout-ms = <100>;
+        };
+
+        pg_up {
+            bindings = <&none>;
+            key-positions = <16 15>;
+            timeout-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -62,11 +78,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans  &kp C_VOL_DN              &kp C_VOL_UP                           &trans  &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-&trans              &trans               &trans  &trans  &kp PAGE_UP               &kp PAGE_DOWN                          &trans  &trans    &kp UP_ARROW  &trans            &trans             &trans
-&kp CAPSLOCK        &trans               &trans  &trans  &kp INT_KATAKANAHIRAGANA  &kp INTERNATIONAL_4                    &trans  &kp LEFT  &kp DOWN      &kp RIGHT         &trans             &trans
-&trans              &trans               &trans  &trans  &trans                    &trans               &trans    &trans  &trans  &trans    &trans        &trans            &trans             &trans
-                                                 &trans  &trans                    &trans               &trans    &trans  &trans  &trans    &trans
+&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP                     &trans  &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
+&trans              &trans               &trans  &trans  &kp PAGE_UP   &kp PAGE_DOWN                    &trans  &trans    &kp UP_ARROW  &trans            &trans             &trans
+&kp CAPSLOCK        &trans               &trans  &trans  &trans        &trans                           &trans  &kp LEFT  &kp DOWN      &kp RIGHT         &trans             &trans
+&trans              &trans               &trans  &trans  &trans        &trans         &trans    &trans  &trans  &trans    &trans        &trans            &trans             &trans
+                                                 &trans  &trans        &trans         &trans    &trans  &trans  &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
